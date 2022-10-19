@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body>
+    <main
+      class="flex justify-center items-center min-h-screen font-outfit bg-veryDarkBlueMainBg"
+    >
+      <section class="flex flex-col p-6 mx-6 rounded-2xl bg-veryDarkBlueCardBg md:max-w-xs">
+        <div
+          class="relative flex justify-center items-center  bg-cyan rounded-2xl transition-all layer"
+        >
+          <img src="images/icon-view.svg" alt="" class="absolute z-50 transition-all view" />
+          <img
+            class="w-full rounded-xl z-10 transition-all duration-200 hover:cursor-pointer img"
+            src="images/image-equilibrium.jpg"
+            alt=""
+          />
+        </div>
+        <h1
+          class="py-5 text-xl text-white font-bold hover:text-cyan hover:cursor-pointer"
+        >
+          Equilibrium #3429
+        </h1>
+        <p class="text-softBlue font-light">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div class="flex justify-between py-6 border-b-[1px] border-b-gray-500">
+          <div class="flex space-x-2">
+            <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
+                fill="#00FFF8"
+              />
+            </svg>
+            <p class="text-cyan font-bold">0.041 ETH</p>
+          </div>
+          <div class="flex items-center space-x-2">
+            <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.s667.667 0 0 1 0 1.334Z"
+                fill="#8BACD9"
+              />
+            </svg>
+            <p class="text-softBlue font-bold">3 days left</p>
+          </div>
+        </div>
+        <div class="flex items-center space-x-4 py-4">
+          <img
+            src="images/image-avatar.png"
+            alt=""
+            class="w-9 border border-white rounded-full"
+          />
+
+          <p class="text-softBlue">
+            Creation of
+
+            <span class="text-white hover:text-cyan hover:cursor-pointer">
+              Jules Wyvern
+            </span>
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
